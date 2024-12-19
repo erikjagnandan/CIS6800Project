@@ -15,12 +15,15 @@ You can alter the following variables within main.py according to your desired e
 model_string: set this to 'cnn', 'cnn_regularized', or 'transformer' depending on which model you want to use (it will be automatically loaded from the models folder)
 
 batch_size: we set this to 10 for training our CNN-based models, and 2 for training our transformer-based model, which was performed on an NVIDIA 4090 GPU with ~25 GB of RAM - you may need to set this lower to avoid CUDA out of memory errors, depending on your hardware
+
 batches_per_backprop: we implemented gradient accumulation - this sets the number of batches to accumulate gradients for before performing a gradient update - we set this to 1 for training our CNN-based models and 8 for training our transformer-based model, effectively making the batch size for transformer 16
 
 train: set to True to run training, False to run validation
+
 load_model: set to True to load saved model, False to start from scratch
 
 epoch_to_load: epoch of training from which to load model (if loading model) - since we could only upload our models from the end of training, this must be set to 9 unless you are loading a model you trained yourself
+
 segment_to_load: we implemented the ability to save copies of each model partway through each epoch - set this to i+1 to load the saved model from val_checkpoint_ratios[i] in epoch_to_load, set this to None to load the saved model from end of epoch_to_load - since we could only upload our models from the end of training, this must be set to None unless you are loading a model you trained yourself
 
 val_checkpoint_ratios: set this to a list of proportions through the training at which you want to save your models and run validation, we set this to [0.25, 0.5, 0.75] in most of our experiments (no need to include 1, as validation and model saving occur automatically at the end of each epoch)
