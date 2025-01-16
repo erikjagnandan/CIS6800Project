@@ -32,7 +32,7 @@ NCUT_Visualizations.ipynb - used to generate our NCUT visualizations
 
 Iterations0-1.ipynb - implemented and evaluated Iterations 0 and 1
 
-Iterations2-4Demo.ipynb - demo for visualizing the output depth maps produced by Iterations 2-4
+Iterations2_4Demo.ipynb - demo for visualizing the output depth maps produced by Iterations 2-4
 
 Each notebook contains instructions on how to run it.
 
