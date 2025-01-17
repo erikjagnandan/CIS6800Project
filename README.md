@@ -19,7 +19,7 @@ We attribute the observed reductions in MSE primarily to this improved scaling.
 ## Visualizations
 
 ### Example Depth Map Comparisons
-Below are comparisons of the original RGB images, ground truth depth maps, depth maps predicted by DINOv2-small, and depth maps predicted by our pipeline.
+Below are comparisons of the original RGB images, ground truth depth maps, depth maps predicted by DINOv2-small, and depth maps predicted by SmoothDINOv2.
 
 #### Example 1
 ![Example 1](doc/images/example1.png)
@@ -33,14 +33,13 @@ Below are comparisons of the original RGB images, ground truth depth maps, depth
 ---
 
 ### Model Architecture
-The diagram below illustrates the architecture of our approach, which combines DINO features from consecutive frames using a two-layer CNN for improved depth estimation.
 
 ![Model Architecture](doc/images/model_architecture.png)
 
 ---
 
 ### Inference Time vs. MSE
-The following chart shows the relationship between inference time and MSE for our approach compared to DINOv2-small and DINOv2-base. Our pipeline achieves better accuracy (lower MSE) with faster inference times compared to DINOv2-base.
+The following plot displays the inference time and MSE achieved by SmoothDINOv2 (built on DINOv2-small) as compared to DINOv2-small and DINOv2-base. SmoothDINOv2 achieves better accuracy (lower MSE) with faster inference times compared to DINOv2-base.
 
 ![Inference Time vs. MSE](doc/images/chart.png)
 
