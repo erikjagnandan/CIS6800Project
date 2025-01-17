@@ -31,9 +31,11 @@ Due to memory limitations on GitHub, only a small subset of the NYU Depth v2 dat
 
 ### Using the provided subset
 Run `train_val_split.py` to create a valid train-validation split:
-```bash
-python train_val_split.py
+   ```bash
+   python train_val_split.py
+   ```
 
+### Using the full dataset
 Place the full dataset in the datasets/nyu_data/data directory. Do not run train_val_split.py, as the provided train_list.json and val_list.json files correspond to the original train-validation split used in all experiments.
 
 Due to memory limitations on GitHub, we cannot upload all of our model files saved throughout the training process for each approach. However, we have included the model files at the end of training (end of epoch 9) for the unregularized and regularized CNN. Also due to memory limitations on GitHub, only a small subset of the NYU Depth v2 dataset is included. The full dataset is available for download from https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
