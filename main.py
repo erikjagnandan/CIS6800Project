@@ -1,13 +1,11 @@
 from utils import *
 from train_and_val import *
 from model_definition_cnn import CNNModel
-from model_definition_transformer import *
 
-model_string = 'cnn' # in 'cnn', 'cnn_regularized', 'transformer'
-num_heads = 77 # is only used if model_string is 'transformer'
+model_string = 'cnn' # in 'cnn', 'cnn_regularized'
 
-batch_size = 10 # set to 2 if model_string is 'transformer', else 10
-batches_per_backprop = 1 # set to 8 if model_string is 'transformer', else 1
+batch_size = 10
+batches_per_backprop = 1
 
 train = False # set to True to run training, False to run validation
 load_model = False # set to True to load saved model, False to start from scratch
@@ -59,10 +57,7 @@ if not train:
     print("Running Validation for " + model_string)
     load_model = True
 
-if 'cnn' in model_string:
-    adapter_model = CNNModel(1, 1)
-else:
-    adapter_model = TransformerModel(1, 1, num_heads, 1)
+adapter_model = CNNModel(1, 1)
 adapter_model.cuda()
 optimizer = torch.optim.Adam(adapter_model.parameters(), lr=learning_rate)
 

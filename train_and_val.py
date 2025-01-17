@@ -49,10 +49,7 @@ def forward_pass(selected_data, data_directory, transform, model, adapter_model,
         adapter_input_fc = torch.cat((dino_features_current[dpt_layer][1].detach().clone(), dino_features_previous[dpt_layer][1].detach().clone(), shift_tensor_fc_x, shift_tensor_fc_y), dim=1)
 
         dino_features_new_x = []
-        if 'cnn' in model_string:
-            dino_features_new_x.append(adapter_model.forward_conv(adapter_input_image, dpt_layer))
-        else:
-            dino_features_new_x.append(adapter_model.forward_transformer(adapter_input_image, dpt_layer))
+        dino_features_new_x.append(adapter_model.forward_conv(adapter_input_image, dpt_layer))
         dino_features_new_x.append(adapter_model.forward_fc(adapter_input_fc, dpt_layer))
         dino_features_new.append(dino_features_new_x)
 

@@ -1,6 +1,6 @@
 from utils import *
 
-model_string = 'cnn' # in 'cnn', 'cnn_regularized', 'transformer'
+model_string = 'cnn' # in 'cnn', 'cnn_regularized'
 # Setting of next two values does not matter
 num_epochs = 10
 num_val_checkpoints = 3
