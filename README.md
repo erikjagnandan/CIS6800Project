@@ -19,8 +19,6 @@ SmoothDINOv2 is a method for reducing the error in the metric depth estimates pr
    cd SmoothDINOv2
 2. Install dependencies:
    ```bash
-   pip install -U openmim
-   mim install mmcv==1.5.0
    pip install -r requirements.txt
 
 Due to memory limitations on GitHub, we cannot upload all of our model files saved throughout the training process for each approach. However, we have included the model files at the end of training (end of epoch 9) for the unregularized and regularized CNN. Also due to memory limitations on GitHub, only a small subset of the NYU Depth v2 dataset is included. The full dataset is available for download from https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
