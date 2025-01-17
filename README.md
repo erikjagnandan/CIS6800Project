@@ -73,20 +73,10 @@ The repository includes model files for the unregularized and regularized CNN at
 ---
 
 ## Jupyter Notebooks
-The repository includes two Jupyter notebooks for demonstration and visualization:
-
-`NCUT_Visualizations.ipynb`: Generates NCUT visualizations.
-`SmoothDINOv2_Demo.ipynb`: Visualizes depth maps produced by SmoothDINOv2.
-Each notebook contains step-by-step instructions for running it.
-
----
-
-## Jupyter Notebooks
 
 The repository includes two Jupyter notebooks for demonstration and visualization:
-
-- **NCUT_Visualizations.ipynb**: Generates NCUT visualizations.
-- **SmoothDINOv2_Demo.ipynb**: Visualizes depth maps produced by SmoothDINOv2.
+1. **NCUT_Visualizations.ipynb**: Generates NCUT visualizations.
+2. **SmoothDINOv2_Demo.ipynb**: Visualizes depth maps produced by SmoothDINOv2.
 
 Each notebook contains step-by-step instructions for running it.
 
