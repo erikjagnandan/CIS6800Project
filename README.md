@@ -58,12 +58,12 @@ python main.py [arguments]
 |          |             |               |                 |   |
 
 
-| Item              | In Stock | Price |
-| :---------------- | :------: | ----: |
-| Python Hat        |   True   | 23.99 |
-| SQL Hat           |   True   | 23.99 |
-| Codecademy Tee    |  False   | 19.99 |
-| Codecademy Hoodie |  False   | 42.99 |
+| Argument          | Description | Default Value | Possible Values |
+| :---------------- | :---------: | :-----------: | --------------: |
+| Python Hat        |    True     |     23.99     |                 |
+| SQL Hat           |    True     |     23.99     |                 |
+| Codecademy Tee    |    False    |     19.99     |                 |
+| Codecademy Hoodie |    False    |     42.99     |                 |
 
 Due to memory limitations on GitHub, we cannot upload all of our model files saved throughout the training process for each approach. However, we have included the model files at the end of training (end of epoch 9) for the unregularized and regularized CNN. Also due to memory limitations on GitHub, only a small subset of the NYU Depth v2 dataset is included. The full dataset is available for download from https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2
 
