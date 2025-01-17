@@ -84,7 +84,6 @@ Each notebook contains step-by-step instructions for running it.
 
 ## Acknowledgments
 The dinov2 folder is copied from the DINOv2 GitHub repository, available at [facebookresearch/dinov2.](https://github.com/facebookresearch/dinov2)
-The dataset is sourced from Kaggle: [NYU Depth v2.](https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2)
 
 
 
