@@ -41,7 +41,7 @@ If you run `main.py` with the provided subset without first running `train_val_s
 
 
 ### Using the full dataset
-Place the full dataset in the datasets/nyu_data/data directory. Do not run train_val_split.py, as the provided train_list.json and val_list.json files correspond to the original train-validation split used in all experiments.
+Place the full dataset in the `datasets/nyu_data/data` directory. Do not run `train_val_split.py`, as the provided `train_list.json` and `val_list.json` files correspond to the original train-validation split used in all experiments.
 
 ---
 
