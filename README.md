@@ -51,11 +51,19 @@ To train or evaluate the model, run the following command:
 python main.py [arguments]
 ```
 
-| Argument | Description | Default Value | Possible Values |   |
-|----------|-------------|---------------|-----------------|---|
-|          |             |               |                 |   |
-|          |             |               |                 |   |
-|          |             |               |                 |   |
+### Command Line Arguments
+
+| Argument               | Description                                       | Default Value          | Possible Values                          |
+|------------------------|---------------------------------------------------|------------------------|------------------------------------------|
+| `--model_string`       | Model type to use.                                | `cnn`                  | `cnn`, `cnn_regularized`                |
+| `--batch_size`         | Number of samples per batch.                      | `10`                   | Any positive integer                     |
+| `--batches_per_backprop` | Number of batches before backpropagation.        | `1`                    | Any positive integer                     |
+| `--train`              | Whether to run training (`True`) or validation (`False`). | `False`          | `True`, `False`                          |
+| `--load_model`         | Whether to load a saved model (`True`) or start fresh (`False`). | `False`   | `True`, `False`                          |
+| `--epoch_to_load`      | Epoch number to load if loading a model.          | `9`                    | Any non-negative integer                 |
+| `--segment_to_load`    | Segment of the epoch to load for validation.      | `None`                 | `None`, or integer in `[1, N]`           |
+| `--val_checkpoint_ratios` | Ratios within an epoch to save model and validate. | `[0.25, 0.5, 0.75]` | List of floats in `[0, 1]`               |
+| `--backbone_size`      | Backbone size of the model.                       | `small`                | `small`, `base`, `large`, `giant`        |
 
 
 | Argument          | Description | Default Value | Possible Values |
