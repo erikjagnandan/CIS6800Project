@@ -22,6 +22,7 @@ from dinov2.eval.depth.models import build_depther
 import urllib
 import json
 import random
+import argparse
 
 
 class CenterPadding(torch.nn.Module):
