@@ -20,6 +20,10 @@ SmoothDINOv2 is a method for reducing the error in the metric depth estimates pr
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+3. Clone the DINOv2 repository and copy the `dinov2` folder into your cloned SmoothDINOv2 repository:
+   ```bash
+   git clone https://github.com/facebookresearch/dinov2.git
+   cp -r dinov2/dinov2 ./SmoothDINOv2/
 
 ---
 
@@ -82,8 +86,3 @@ The repository includes two Jupyter notebooks for demonstration and visualizatio
 2. `SmoothDINOv2_Demo.ipynb`: Visualizes depth maps produced by SmoothDINOv2.
 
 Each notebook contains step-by-step instructions for running it.
-
----
-
-## Acknowledgments
-The dinov2 folder is copied from the DINOv2 GitHub repository, available at [facebookresearch/dinov2.](https://github.com/facebookresearch/dinov2)
