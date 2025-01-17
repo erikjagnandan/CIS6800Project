@@ -23,7 +23,7 @@ Below are RGB images from the NYU Depth v2 Dataset, alongside the corresponding 
 ![Example 1](doc/images/example1.png)
 
 ### Kitchen
-![Example 2](doc/images/example1.png)
+![Example 2](doc/images/example2.png)
 
 ### Office
 ![Example 3](doc/images/example3.png)
