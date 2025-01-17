@@ -15,7 +15,7 @@ SmoothDINOv2 is a method for reducing the error in the metric depth estimates pr
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/SmoothDINOv2.git
+   git clone https://github.com/erikjagnandan/SmoothDINOv2.git
    cd SmoothDINOv2
 2. Install dependencies:
    ```bash
