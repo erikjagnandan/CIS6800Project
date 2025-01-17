@@ -39,7 +39,7 @@ Below are RGB images from the NYU Depth v2 Dataset, alongside the corresponding 
 ---
 
 ### Inference Time vs. MSE
-The following plot displays the inference time and MSE achieved by SmoothDINOv2 (built on DINOv2-small) as compared to DINOv2-small and DINOv2-base. SmoothDINOv2 achieves better accuracy (lower MSE) with faster inference times compared to DINOv2-base.
+The following plot displays the inference time and MSE achieved by SmoothDINOv2 (built on DINOv2-small) on our validation split of the NYU Depth v2 dataset as compared to DINOv2-small and DINOv2-base. SmoothDINOv2 achieves better accuracy (lower MSE) with faster inference times compared to DINOv2-base.
 
 ![Inference Time vs. MSE](doc/images/chart.png)
 
