@@ -5,8 +5,8 @@ SmoothDINOv2 is a method for reducing the error in the metric depth estimates pr
 ---
 
 ## Features
-- **Error reduction for DINOv2 depth estimates**: SmoothDINOv2 uses regularized CNN models to improve depth estimation accuracy.
-- **Train and evaluate models**: Includes scripts for training, validation, and visualization.
+- **Error reduction for DINOv2 depth estimates**: SmoothDINOv2 uses a CNN-based adapter model placed between the DINO encoder and depth decoder to combine DINO features from consecutive frames and improve depth estimation accuracy.
+- **Train and evaluate models**: Includes scripts for training and validation.
 - **Pre-trained models**: Includes checkpoints for regularized and unregularized CNN models.
 - **Data handling utilities**: Tools for creating train-validation splits and working with the NYU Depth v2 dataset.
 
