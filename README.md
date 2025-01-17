@@ -68,7 +68,7 @@ python main.py [arguments]
 ---
 
 ## Pre-trained Models
-The repository includes model files for the unregularized and regularized CNN at the end of training (epoch 9). Place these files in the appropriate directory if needed.
+The repository includes model files for the unregularized and regularized CNN at the end of training (epoch 9). These can be loaded for validation or further training by setting the `--load_model` argument to `True` (no need to specify `--epoch_to_load` and `--segment_to_load`, as their default values load the model at the end of epoch 9).
 
 ---
 
