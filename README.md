@@ -32,7 +32,7 @@ Due to memory limitations on GitHub, only a small subset of the NYU Depth v2 dat
 ## Data Preparation
 
 ### Using the provided subset
-Run `train_val_split.py` to create a valid train-validation split:
+Run `train_val_split.py` to create a valid train-validation split on the provided subset:
    ```bash
    python train_val_split.py
    ```
