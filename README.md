@@ -37,7 +37,7 @@ Run `train_val_split.py` to create a valid train-validation split on the provide
    python train_val_split.py
    ```
 
-If you run main.py with the provided subset without first running train_val_split.py, you will get an error similar to: FileNotFoundError: [Errno 2] No such file or directory: '/home/SmoothDINOv2/datasets/nyu_data/data/nyu2_train/<dataset_dir>/<image_index>.png' because the training code is trying to retrieve an image from the full dataset using our original train-validation split, as opposed to a valid train-validation split for the small subset provided here.
+If you run main.py with the provided subset without first running train_val_split.py, you will get an error similar to `FileNotFoundError: [Errno 2] No such file or directory: '/home/SmoothDINOv2/datasets/nyu_data/data/nyu2_train/<dataset_dir>/<image_index>.png'` because the training code is trying to retrieve an image from the full dataset using our original train-validation split, as opposed to a valid train-validation split for the small subset provided here.
 
 
 ### Using the full dataset
