@@ -19,7 +19,7 @@ We attribute the observed reductions in MSE primarily to this improved scaling.
 ## Visualizations
 
 ### Example Depth Map Comparisons
-Below are comparisons of the original RGB images, ground truth depth maps, depth maps predicted by DINOv2-small, and depth maps predicted by SmoothDINOv2.
+Below are RGB images from the NYU Depth v2 Dataset, alongside the corresponding ground truth depth maps, depth maps predicted by DINOv2-small, and depth maps predicted by SmoothDINOv2.
 
 #### Example 1
 ![Example 1](doc/images/example1.png)
