@@ -48,7 +48,7 @@ Place the full dataset in the `datasets/nyu_data/data` directory. Do not run `tr
 ## Usage
 
 ### Running the Code
-To train or evaluate the model, run the following command:
+To train or evaluate a model, run the following command:
 
 ```bash
 python main.py [arguments]
