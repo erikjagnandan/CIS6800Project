@@ -21,6 +21,8 @@ SmoothDINOv2 is a method for reducing the error in the metric depth estimates pr
    ```bash
    pip install -r requirements.txt
 
+---
+
 ## Dataset
 
 Due to memory limitations on GitHub, only a small subset of the NYU Depth v2 dataset is included. The full dataset is available for download from [Kaggle](https://www.kaggle.com/datasets/soumikrakshit/nyu-depth-v2).
